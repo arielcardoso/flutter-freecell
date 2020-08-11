@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-
-import 'column.dart';
+import 'package:freecell/views/column_default.dart';
+import 'package:freecell/views/column_aux.dart';
+import 'package:freecell/views/column_naipe.dart';
 
 class GamePage extends StatefulWidget {
   GamePage({Key key}) : super(key: key);
@@ -49,7 +50,16 @@ class _GamePageState extends State<GamePage> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            
+            ColumnAux(),
+            ColumnDefault(),
+            ColumnDefault(),
+            ColumnDefault(),
+            ColumnDefault(),
+            ColumnDefault(),
+            ColumnDefault(),
+            ColumnDefault(),
+            ColumnDefault(),
+            ColumnNaipe(),
           ],
         ),
       ),
